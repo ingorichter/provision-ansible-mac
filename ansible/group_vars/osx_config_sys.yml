@@ -76,7 +76,7 @@ osx_config_sys:
     - chflags uchg /private/var/vm/sleepimage
 
     # Disable the sudden motion sensor as it’s not useful for SSDs
-    - pmset -a sms 0
+    # - pmset -a sms 0
 
   system_preferences:
 
@@ -420,19 +420,13 @@ osx_config_sys:
         # Set language and text formats
         # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
         # `Inches`, `en_GB` with `en_US`, and `true` with `false`.
-        - defaults write NSGlobalDomain AppleLanguages -array "en-GB" "en"
-        - defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=GBP"
+        - defaults write NSGlobalDomain AppleLanguages -array "en-US" "en"
+        - defaults write NSGlobalDomain AppleLocale -string "en_US@currency=USD"
         - defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
         - defaults write NSGlobalDomain AppleMetricUnits -bool true
 
         # Set the timezone; see `sudo systemsetup -listtimezones` for other values
-        - systemsetup -settimezone "Europe/London" > /dev/null
+        - systemsetup -settimezone "America/Los_Angeles" > /dev/null
 
         # Disable auto-correct
         - defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-
-        # Prevent Time Machine from prompting to use new hard drives as backup volume
-        - defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-
-        # Disable local Time Machine backups
-        - hash tmutil &> /dev/null && sudo tmutil disablelocal

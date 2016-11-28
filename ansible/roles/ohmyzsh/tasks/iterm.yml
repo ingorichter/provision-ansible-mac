@@ -11,7 +11,7 @@
     state=directory
     recurse=yes
     mode=0755
-  sudo: true
+  become: true
 
 - name: Oh-My-Zsh | Switch to ZSH
   file: >
@@ -20,7 +20,7 @@
     recurse=yes
     owner=reecefowell
     group=admin
-  sudo: true
+  become: true
 
 - name: Oh-My-Zsh | Switch to ZSH
   file: >
@@ -29,4 +29,4 @@
     path=/usr/local/share/zsh/site-functions
     owner=root
     group=admin
-  sudo: true
+  become: true

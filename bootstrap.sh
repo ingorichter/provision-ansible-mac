@@ -2,7 +2,7 @@
 
 set -e
 
-SRC_DIRECTORY="$HOME/Provision"
+SRC_DIRECTORY="$(pwd)"
 ANSIBLE_DIRECTORY="$SRC_DIRECTORY/ansible"
 ANSIBLE_CONFIGURATION_DIRECTORY="$HOME/.ansible.d"
 
@@ -31,17 +31,6 @@ fi
 if [[ ! -x /usr/local/bin/git ]]; then
     echo "Info   | Install   | git"
     brew install git
-fi
-
-# Download and install python
-if [[ ! -x /usr/local/bin/python ]]; then
-    echo "Info   | Install   | python"
-    brew install python --framework --with-brewed-openssl
-fi
-
-# Download and install hg
-if [[ ! -x /usr/local/bin/hg ]]; then
-    pip install mercurial
 fi
 
 # Download and install Ansible

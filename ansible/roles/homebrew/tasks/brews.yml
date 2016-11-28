@@ -4,7 +4,7 @@
     update_homebrew=yes
     upgrade_all=yes
     path="{{ executables.brew }}"
-  sudo: false
+  become: false
 
 - name: Homebrew | Brew install osx_packages.common.packages
   homebrew: >
@@ -13,8 +13,8 @@
     path="{{ executables.brew }}"
   with_items:
    - "{{ osx_packages.common.packages }}"
-  sudo: false
+  become: false
 
 - name: Homebrew | Cleanup
   shell: brew cleanup
-  sudo: false
+  become: false

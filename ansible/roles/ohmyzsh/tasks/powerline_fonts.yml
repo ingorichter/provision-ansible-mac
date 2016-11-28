@@ -9,8 +9,8 @@
 
 - name: Oh-My-Zsh | Install PowerLine fonts
   shell: cd {{ package.powerline.origin.dest }} && ./install.sh
-  sudo: false
+  become: false
 
 - name: Oh-My-Zsh | Reset font cache
   shell: atsutil databases -remove
-  sudo: true
+  become: true

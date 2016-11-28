@@ -1,16 +1,10 @@
 ---
 - hosts: all
-  sudo: false
+  become: false
   roles:
    - { role: preamble }
-   - { role: git }
-   - { role: ssh }
-   - { role: ohmyzsh }
+   # - { role: ssh }
+   #- { role: ohmyzsh }
    - { role: configsys }
    - { role: homebrew }
    - { role: configapp }
-   - { role: nodejs }
-   - { role: bower }
-   - { role: gulpjs }
-   - { role: nginx }
-   - { role: postgres }

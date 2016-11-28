@@ -4,11 +4,11 @@
     name=node
     state=present
     path="{{ executables.brew }}"
-  sudo: false
+  become: false
 
 - name: Node | Install NPM
   homebrew: >
     name=npm
     state=present
     path="{{ executables.brew }}"
-  sudo: false
+  become: false

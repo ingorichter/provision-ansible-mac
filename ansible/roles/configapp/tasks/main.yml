@@ -2,4 +2,3 @@
 - include: finder.yml
 - include: textedit.yml
 - include: safari.yml
-- include: transmission.yml

@@ -6,13 +6,10 @@ osx_packages:
     taps:
       - homebrew/completions
       - homebrew/dupes
-      - homebrew/nginx
-      - homebrew/php
-      - homebrew/python
       - homebrew/science
       - homebrew/versions
+      - caskroom/versions
       - osx-cross/avr
-      - nviennot/tmate
 
     packages:
       - coreutils
@@ -20,14 +17,12 @@ osx_packages:
       - wget
       - git-extras
       - hub
-      - caskroom/cask/brew-cask
+#      - caskroom/cask/brew-cask
       - geoip
-      - ruby
-      - chromedriver
-      - selenium-server-standalone
-      - rabbitmq
-      - zeromq
-      - maven
+      - tree
+      - ag
+      - go 
+      - hugo
 
     casks:
       #- adium # don't even use it anymore
@@ -35,14 +30,13 @@ osx_packages:
       - appzapper
       - caffeine
       - ccleaner
-      - coda
       - cyberduck
       - deeper
       - dropbox
       - evernote
       - firefox
       #- flashplayer # perhaps we can live without this bloatware
-      - flip4mac
+      #- flip4mac
       - forklift
       - github-desktop
       - google-chrome
@@ -53,27 +47,33 @@ osx_packages:
       - iterm2
       - java
       - maintenance
-      - mysqlworkbench
+      #- mysqlworkbench
       - onyx
       #- patterns # does not exists, considering contribution.
-      - pg-commander
+      #- pg-commander
       #- pixelmator # does not exists, considering contribution.
       - postbox
-      - postgres
-      - secrets
+      #- postgres
+      #- secrets
       - skype
       - spotify
-      - sublime-text
-      - teamviewer
-      - textmate
+      #- sublime-text
+      #- teamviewer
+      #- textmate
       - the-unarchiver
-      - transmit
-      - transmission
+      #- transmit
+      #- transmission
       - unrarx
       - vlc
-      - xslimmer
-      - monolingual
+      #- xslimmer
+      #- monolingual
       - yasu
+      - visual-studio-code
+      - brackets
+      - webstorm
+      - appcode
+      - shiftit
+      - scansnap-manager-s1500
 
   python_packages:
 
