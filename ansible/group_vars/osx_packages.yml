@@ -29,67 +29,80 @@ osx_packages:
 
     casks:
       #- adium # don't even use it anymore
-      - archiver
-      - appzapper
-      - caffeine
-      - ccleaner
-      - cyberduck
-      - deeper
-      - dropbox
-      - evernote
-      - firefox
-      #- flashplayer # perhaps we can live without this bloatware
-      #- flip4mac
-      - forklift
-      - github-desktop
-      - google-chrome
-      - google-drive
-      - hands-off
-      - intellij-idea
-      #- ipackr # does not exists, considering contribution.
-      - iterm2
-      - java
-      - maintenance
-      #- mysqlworkbench
-      - onyx
-      #- patterns # does not exists, considering contribution.
-      #- pg-commander
-      #- pixelmator # does not exists, considering contribution.
-      - postbox
-      #- postgres
-      #- secrets
-      - skype
-      - spotify
-      #- sublime-text
-      #- teamviewer
-      #- textmate
-      - the-unarchiver
+      #- xslimmer
       #- transmit
       #- transmission
-      - unrarx
-      - vlc
-      #- xslimmer
+      #- textmate
+      #- teamviewer
+      #- sublime-text
+      #- secrets
+      #- postgres
+      #- pixelmator # does not exists, considering contribution.
+      #- pg-commander
+      #- patterns # does not exists, considering contribution.
+      #- mysqlworkbench
       #- monolingual
+      #- ipackr # does not exists, considering contribution.
+      #- flip4mac
+      #- flashplayer # perhaps we can live without this bloatware
       - yasu
-      - visual-studio-code
-      - brackets
+      - webtorrent
       - webstorm
-      - appcode
+      - vmware-fusion
+      - vlc
+      - visual-studio-code
+      - vercrypt
+      - unrarx
+      - the-unarchiver
+      - superduper
+      - spotify
+      - slack
+      - skype
+      - sketch
       - shiftit
       - scansnap-manager-s1500
-      - bartender
-      - bitbar
-      - licecap
-      - flux
       - rescuetime
-      - sketch
-      - superduper
-      - vercrypt
-      - webtorrent
+      - postbox
+      - owncloud
+      - onyx
+      - maintenance
+      - licecap
       - karabiner
-      - day-o
+      - java
+      - iterm2
+      - intellij-idea
+      - hands-off
+      - google-drive
+      - google-chrome
+      - github-desktop
+      - forklift
+      - flux
+      - firefox
+      - evernote
+      - dropbox
       - double-commander
-      - slack
+      - docker
+      - deeper
+      - day-o
+      - cyberduck
+      - ccleaner
+      - caffeine
+      - brackets
+      - bitbar
+      - bartender
+      - archiver
+      - appzapper
+      - appcode
+      - alfred
+      #- adobe-photoshop-lightroom
+      - adobe-creative-cloud
+      - etrecheck
+      - keyboard-maestro
+      #- marked2
+      - sonos
+      - sourcetree
+      - cleanmymac
+      - commander-one
 
   python_packages:
 
