@@ -23,6 +23,9 @@ osx_packages:
       - ag
       - go 
       - hugo
+      - vim
+      - shellcheck
+      - tmux
 
     casks:
       #- adium # don't even use it anymore
@@ -74,6 +77,19 @@ osx_packages:
       - appcode
       - shiftit
       - scansnap-manager-s1500
+      - bartender
+      - bitbar
+      - licecap
+      - flux
+      - rescuetime
+      - sketch
+      - superduper
+      - vercrypt
+      - webtorrent
+      - karabiner
+      - day-o
+      - double-commander
+      - slack
 
   python_packages:
 
