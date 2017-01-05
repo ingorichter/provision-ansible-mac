@@ -1,0 +1,14 @@
+---
+- name: n | Clone Node version manager repo
+  shell: >
+    command={{ n_package_manager.origin.src }}
+    dest={{ n_package_manager.origin.dest }}
+    update=yes
+    accept_hostkey=yes
+  become: false
+
+- name: n | Install Node version manager
+  make: >
+    chdir={{ n_package_manager.origin.dest }}
+    target=install
+  become: false

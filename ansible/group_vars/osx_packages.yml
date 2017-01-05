@@ -12,20 +12,22 @@ osx_packages:
       - osx-cross/avr
 
     packages:
-      - coreutils
-      - htop-osx
-      - wget
-      - git-extras
-      - hub
-#      - caskroom/cask/brew-cask
-      - geoip
-      - tree
       - ag
+      - coreutils
+      - geoip
+      - git-extras
       - go 
+      - htop-osx
+      - hub
       - hugo
-      - vim
       - shellcheck
       - tmux
+      - tree
+      - vim
+      - wget
+      - xz
+      - zsh
+#      - caskroom/cask/brew-cask
 
     casks:
       #- adium # don't even use it anymore
@@ -45,64 +47,64 @@ osx_packages:
       #- ipackr # does not exists, considering contribution.
       #- flip4mac
       #- flashplayer # perhaps we can live without this bloatware
-      - yasu
-      - webtorrent
-      - webstorm
-      - vmware-fusion
-      - vlc
-      - visual-studio-code
-      - vercrypt
-      - unrarx
-      - the-unarchiver
-      - superduper
-      - spotify
-      - slack
-      - skype
-      - sketch
-      - shiftit
-      - scansnap-manager-s1500
-      - rescuetime
-      - postbox
-      - owncloud
-      - onyx
-      - maintenance
-      - licecap
-      - karabiner
-      - java
-      - iterm2
-      - intellij-idea
-      - hands-off
-      - google-drive
-      - google-chrome
-      - github-desktop
-      - forklift
-      - flux
-      - firefox
-      - evernote
-      - dropbox
-      - double-commander
-      - docker
-      - deeper
-      - day-o
-      - cyberduck
-      - ccleaner
-      - caffeine
-      - brackets
-      - bitbar
-      - bartender
-      - archiver
-      - appzapper
-      - appcode
-      - alfred
-      #- adobe-photoshop-lightroom
       - adobe-creative-cloud
-      - etrecheck
-      - keyboard-maestro
-      #- marked2
-      - sonos
-      - sourcetree
+      - adobe-photoshop-lightroom600
+      - aerial
+      - alfred
+      - appcode
+      - appzapper
+      - archiver
+      - bartender
+      - bitbar
+      - brackets
+      - caffeine
+      - ccleaner
       - cleanmymac
       - commander-one
+      - cyberduck
+      - day-o
+      - deeper
+      - docker
+      - double-commander
+      - dropbox
+      - etrecheck
+      - firefox
+      - flux
+      - github-desktop
+      - google-chrome
+      - google-drive
+      - hands-off
+      - intellij-idea
+      - iterm2
+      - java
+      - karabiner
+      - keyboard-maestro
+      - licecap
+      - maintenance
+      - onyx
+      - owncloud
+      - postbox
+      - rescuetime
+      - scansnap-manager-s1500
+      - shiftit
+      - sketch
+      - skype
+      - slack
+      - sonos
+      - sourcetree
+      - spotify
+      - superduper
+      - the-unarchiver
+      - unrarx
+      - veracrypt
+      - visual-studio-code
+      - vlc
+      - vmware-fusion
+      - webstorm
+      - webtorrent
+      - yasu
+      #- adobe-photoshop-lightroom
+      #- marked2
 
   python_packages:
 

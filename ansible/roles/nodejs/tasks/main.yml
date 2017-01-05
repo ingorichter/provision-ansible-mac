@@ -1,14 +1,4 @@
 ---
-- name: Node | Install Node
-  homebrew: >
-    name=node
-    state=present
-    path="{{ executables.brew }}"
-  become: false
-
-- name: Node | Install NPM
-  homebrew: >
-    name=npm
-    state=present
-    path="{{ executables.brew }}"
+- name: Node | Install Node via n
+  shell: N_PREFIX={{n_package_manager.prefix}} n lts
   become: false

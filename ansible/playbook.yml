@@ -4,7 +4,10 @@
   roles:
    - { role: preamble }
    # - { role: ssh }
-   #- { role: ohmyzsh }
+   # - { role: ohmyzsh }
    - { role: configsys }
    - { role: homebrew }
+   - { role: zsh }
+   - { role: n }
+   - { role: nodejs }
    - { role: configapp }

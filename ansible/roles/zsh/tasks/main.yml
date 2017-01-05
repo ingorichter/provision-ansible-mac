@@ -1,0 +1,21 @@
+---
+
+- name: zsh | Register location of new Zsh
+  command: which zsh
+  register: zsh_location
+  changed_when: false
+
+- name: zsh | Add new Zsh location to /etc/shells
+  lineinfile:
+    dest: /etc/shells
+    line: "{{ zsh_location.stdout }}"
+  become: true
+
+- name: zsh | Make new Zsh the default shell
+  user: name={{ ansible_env.USER }} shell={{ zsh_location.stdout }}
+  become: true
+
+- name: zsh | Clone oh-my-zsh
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh
+    dest: ~/.oh-my-zsh

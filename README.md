@@ -22,6 +22,11 @@ What it does:
 - Fetches SSH keys from remote LAN NAS server and configures SSH.
 - Installs Java via Brew.
 
+Manual Steps:
+-------------
+- Configure Dropbox to get access to my 1Password Vault
+- Wire Paperless to existing Library
+
 Inspired by:
 ------------
 
