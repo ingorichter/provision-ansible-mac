@@ -82,7 +82,7 @@ package:
 n_package_manager:
   origin:
     src: https://github.com/tj/n
-    dest: "{{ lookup ('env', 'TMPDIR') }}/n_package_manager"
+    dest: "{{ lookup ('env', 'TMPDIR') }}n_package_manager"
   prefix: "/Users/ingorichter/"
 
 
