@@ -85,4 +85,7 @@ n_package_manager:
     dest: "{{ lookup ('env', 'TMPDIR') }}n_package_manager"
   prefix: "/Users/ingorichter/"
 
-
+dotfiles:
+  origin:
+    src: https://github.com/ingorichter/dotfiles.git
+    dest: ~/dotfiles

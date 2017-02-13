@@ -1,10 +1,12 @@
 ---
 - include: install.yml
-- include: powerline_fonts.yml
-- include: theme.yml
-- include: plugins.yml
-- include: terminal.yml
-- include: iterm.yml
+#- include: powerline_fonts.yml
+#- include: theme.yml
+#- include: plugins.yml
+#- include: terminal.yml
+#- include: iterm.yml
 
-- shell: source ~/.zshrc
-  sudo: false
+# - shell: source .zshrc
+#   sudo: false
+#   args:
+#     chdir: $HOME 

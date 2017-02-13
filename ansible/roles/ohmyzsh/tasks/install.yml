@@ -11,18 +11,18 @@
   shell: chsh -s /bin/zsh
   sudo: true
 
-- name: Oh-My-Zsh | Copy RC configuration
-  copy: >
-    src=zshrc
-    dest=~/.zshrc
-    mode=0644
+# - name: Oh-My-Zsh | Copy RC configuration
+#   copy: >
+#     src=zshrc
+#     dest=~/.zshrc
+#     mode=0644
 
-- name: Oh-My-Zsh | Add github rate limit token
-  lineinfile: >
-    dest=~/.zshrc
-    regexp='^#export HOMEBREW_GITHUB_API_TOKEN='
-    insertafter='^#export HOMEBREW_GITHUB_API_TOKEN='
-    line="export HOMEBREW_GITHUB_API_TOKEN={{ lookup('file', files.github_rate_limit_token) }}"
+# - name: Oh-My-Zsh | Add github rate limit token
+#   lineinfile: >
+#     dest=~/.zshrc
+#     regexp='^#export HOMEBREW_GITHUB_API_TOKEN='
+#     insertafter='^#export HOMEBREW_GITHUB_API_TOKEN='
+#     line="export HOMEBREW_GITHUB_API_TOKEN={{ lookup('file', files.github_rate_limit_token) }}"
 
 - name: Oh-My-Zsh | Copy aliases configuration
   copy: >

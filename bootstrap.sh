@@ -6,6 +6,10 @@ SRC_DIRECTORY="$(pwd)"
 ANSIBLE_DIRECTORY="$SRC_DIRECTORY/ansible"
 ANSIBLE_CONFIGURATION_DIRECTORY="$HOME/.ansible.d"
 
+info() {
+    printf "Info   | $1   | $2\n"
+}
+
 # Download and install Command Line Tools
 if [[ ! -x /usr/bin/gcc ]]; then
     echo "Info   | Install   | xcode"
@@ -14,7 +18,7 @@ fi
 
 # Download and install Homebrew
 if [[ ! -x /usr/local/bin/brew ]]; then
-    echo "Info   | Install   | homebrew"
+    info "Install", "homebrew"
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
@@ -23,18 +27,19 @@ export PATH=/usr/local/bin:$PATH
 
 # Download and install zsh
 if [[ ! -x /usr/local/bin/zsh ]]; then
-    echo "Info   | Install   | zsh"
+    info "Install", "zsh"
     brew install zsh
 fi
 
 # Download and install git
 if [[ ! -x /usr/local/bin/git ]]; then
-    echo "Info   | Install   | git"
+    info "Install", "git"
     brew install git
 fi
 
 # Download and install Ansible
 if [[ ! -x /usr/local/bin/ansible ]]; then
+    info "Install", "Ansible"
     brew install ansible
 fi
 
