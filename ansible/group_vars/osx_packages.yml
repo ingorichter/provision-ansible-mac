@@ -50,7 +50,7 @@ osx_packages:
       #- flip4mac
       #- flashplayer # perhaps we can live without this bloatware
       - adobe-creative-cloud
-      - adobe-photoshop-lightroom600
+      - adobe-photoshop-lightroom
       - aerial
       - alfred
       - appcode
@@ -105,7 +105,7 @@ osx_packages:
       - webstorm
       - webtorrent
       - yasu
-      #- adobe-photoshop-lightroom
+      - 1password
       #- marked2
 
   python_packages:
