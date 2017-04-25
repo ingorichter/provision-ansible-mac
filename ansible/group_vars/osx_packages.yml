@@ -105,7 +105,10 @@ osx_packages:
       - webstorm
       - webtorrent
       - yasu
+<<<<<<< Updated upstream
       - 1password
+=======
+>>>>>>> Stashed changes
       #- marked2
 
   python_packages:

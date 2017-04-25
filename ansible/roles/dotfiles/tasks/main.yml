@@ -1,0 +1,12 @@
+---
+- name: Dotfiles | Clone dotfiles
+  git: >
+    repo={{ dotfiles.origin.src }}
+    dest={{ dotfiles.origin.dest }}
+    update=yes
+    accept_hostkey=yes
+
+- name: Dotfiles | Link dotfiles
+  shell: "./setupDotFiles.sh link"
+  args:
+    chdir: "{{ dotfiles.origin.dest }}" 
