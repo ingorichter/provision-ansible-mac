@@ -50,7 +50,7 @@ osx_packages:
       #- flip4mac
       #- flashplayer # perhaps we can live without this bloatware
       - adobe-creative-cloud
-      - adobe-photoshop-lightroom
+      # - adobe-photoshop-lightroom kommt mit creative-cloud
       - aerial
       - alfred
       - appcode
@@ -79,15 +79,15 @@ osx_packages:
       - intellij-idea
       - iterm2
       - java
-      - karabiner
+      # - karabiner
       - keyboard-maestro
       - licecap
       - maintenance
       - onyx
       - owncloud
+      - proxpn
       - postbox
       - rescuetime
-      - scansnap-manager-s1500
       - shiftit
       - sketch
       - skype
@@ -105,10 +105,7 @@ osx_packages:
       - webstorm
       - webtorrent
       - yasu
-<<<<<<< Updated upstream
       - 1password
-=======
->>>>>>> Stashed changes
       #- marked2
 
   python_packages:

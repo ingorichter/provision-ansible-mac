@@ -4,8 +4,8 @@
   roles:
    - { role: preamble }
    # - { role: ssh }
-   - { role: dotfiles }
    - { role: ohmyzsh }
+   - { role: dotfiles }
    - { role: configsys }
    - { role: homebrew }
    - { role: zsh }
