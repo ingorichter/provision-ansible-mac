@@ -28,6 +28,7 @@ osx_packages:
       - vim
       - wget
       - xz
+      - yarn
       - zsh
 #      - caskroom/cask/brew-cask
 
